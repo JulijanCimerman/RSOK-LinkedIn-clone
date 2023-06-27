@@ -4,10 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Linkedin</title>
+        <title>Adverpjob</title>
 
         <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
-        <link rel="stylesheet" href="Profil.css" />
+        <link rel="stylesheet" href="Style.css" />
 
         <script src="Script.js"></script>
         <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
@@ -20,13 +20,12 @@
                     <img
                         id="header-logo"
                         src="images/linkedin.png"
-                        alt="LinkedIn"
+                        alt="Adverpjob"
                     />
                     <img
                         id="header-picture-menu"
                         src="images/picture.jpeg"
                         alt="Profile picture"
-                        href="Profil.html"
                     />
                     <span id="header-picture-menu-bars">
                         <span class="fas fa-bars"></span>
@@ -49,7 +48,7 @@
                     <ul>
                         <li>
                             <a href="Index.html">
-                            <div id="home">
+                            <div id="home" class="selected">
                                 <span class="fas fa-home"></span>
                                 <span class="nav-item-text">Početna</span>
                             </div>
@@ -111,10 +110,7 @@
                 </nav>
             </div>
         </header>
-
         <!-- LOADING PAGE -->
-        
-            
         <div id="loading-page">
             <div>
                 <img src="images/linkedin.png" alt="" />
@@ -154,9 +150,8 @@
                                 alt="Profile picture"
                             />
 <!-- Evo pa profile NAMEEEEEEEEEEE -->
-                            <strong id="profile-name"
-                                >Gabriel Iglesias</strong
-                            >
+                            <strong id="profile-name" 
+                                ><a href="Profil.html"> Gabriel Iglesias </a></strong>
                             <small>Front-End Developer</small>
                         </div>
                         <div id="profile-links">
@@ -281,27 +276,6 @@
             <!-- MAIN -->
             <div id="main-wrapper">
                 <main id="main-section">
-                    <div id="share-box">
-                        <div id="button-box">
-                            <button id="btn-post">
-                                <span class="fas fa-edit"></span>
-                                <span id="btn-text">Start a post</span>
-                            </button>
-                            <button id="btn-picture">
-                                <span class="fas fa-camera"></span>
-                            </button>
-                            <button id="btn-video">
-                                <span class="fas fa-video"></span>
-                            </button>
-                            <button id="btn-document">
-                                <span class="fas fa-file"></span>
-                            </button>
-                        </div>
-                        <div id="link-box">
-                            <a href="#">Write an article</a>
-                            <span>on LinkedIn</span>
-                        </div>
-                    </div>
                     <div id="feed-sort">
                         <hr />
                         <button>
@@ -310,7 +284,38 @@
                             <span class="fas fa-sort-down"></span>
                         </button>
                     </div>
-                    
+                    <article>
+                        <!-- Forma za promenu Imena, Prezimena, Mejla I sifre. -->
+                        <form action="PromeniSifruiMejl.php" method="post">
+                            <input type="hidden" name="ID" value="4"> <!-- Replace "1" with the actual user ID -->
+                        
+                            <label for="ime">First Name:</label>
+                            <input type="text" id="ime" name="ime"><br><br>
+                        
+                            <label for="prezime">Last Name:</label>
+                            <input type="text" id="prezime" name="prezime"><br><br>
+                        
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"><br><br>
+                        
+                            <label for="sifra">Password:</label>
+                            <input type="password" id="sifra" name="sifra"><br><br>
+
+                            
+                        
+                            <input type="submit" value="Submit">
+                            <br>
+                            <br>
+                          </form>
+
+                          <form action="PromeniSliku.php" method="post" enctype="multipart/form-data">
+                            <label for="photo">Select Photo:</label>
+                            <input type="file" id="photo" name="photo"><br><br>
+                        
+                            <input type="submit" value="Upload">
+                          </form>
+                          
+                    </article>
                 </main>
             </div>
             <!-- RIGHT ASIDE -->
@@ -380,8 +385,8 @@
                         <small>Ad</small>
                         <a href="#">
                             <span
-                                >Maurício, unlock your full potential with
-                                Linkedin Premium</span
+                                >unlock your full potential with
+                                Adverpjob Premium</span
                             >
                             <div>
                                 <img src="images/picture.jpeg" alt="" />
@@ -414,12 +419,12 @@
                                 Business Services
                                 <span class="fas fa-angle-down"></span>
                             </li>
-                            <li>Get the LinkedIn app</li>
+                            <li>Get the Adverpjob app</li>
                             <li>More</li>
                         </ul>
                         <div>
-                            <strong>Linked<span>in</span></strong>
-                            <span>LinkedIn Corporation © 2019</span>
+                            <strong>Adverpjob<span>ab</span></strong>
+                            <span>Adverpjob Corporation © 2023</span>
                         </div>
                     </footer>
                 </div>

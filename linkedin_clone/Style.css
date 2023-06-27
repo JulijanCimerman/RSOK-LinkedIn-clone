@@ -396,6 +396,7 @@ section#ads div span#ad {
     border-radius: 2px;
 }
 
+
 /**************************************************************************
     main container > left aside > PROFILE CARD
 **************************************************************************/
@@ -1465,4 +1466,51 @@ div#dot-loader {
 .vanish {
     border: 0 !important;
     background: transparent !important;
+}
+
+/***************************************************************************
+   JOB-LISTING CLASSES
+/**************************************************************************/
+
+.job-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-listing {
+    margin-bottom: 20px;
+}
+
+.job-listing h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-listing p {
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.job-listing .logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    display:flex;
+}
+
+.job-listing .button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.job-name{
+    display:flex;
+    align-items: center;
 }

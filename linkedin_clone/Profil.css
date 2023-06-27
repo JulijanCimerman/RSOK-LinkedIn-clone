@@ -1467,7 +1467,10 @@ div#dot-loader {
     background: transparent !important;
 }
 
-/*PROFILNI SETUP*/
+/***************************************************************************
+    PROFILE SETUP
+/**************************************************************************/
+
 
 .profile-container {
     max-width: 800px;
